@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    //Load Bootcamps Button
+    @IBAction func LoadBootButton(_ sender: Any) {
+        let vc = BootTableViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 

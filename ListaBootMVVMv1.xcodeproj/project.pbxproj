@@ -13,6 +13,13 @@
 		1FD2A9182AF5027C00071820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FD2A9162AF5027C00071820 /* Main.storyboard */; };
 		1FD2A91A2AF5027F00071820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD2A9192AF5027F00071820 /* Assets.xcassets */; };
 		1FD2A91D2AF5027F00071820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FD2A91B2AF5027F00071820 /* LaunchScreen.storyboard */; };
+		1FE171752AF50CB100492CE0 /* BootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE171742AF50CB100492CE0 /* BootTableViewController.swift */; };
+		1FE171772AF511C300492CE0 /* Extension+URLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE171762AF511C300492CE0 /* Extension+URLResponse.swift */; };
+		1FE171792AF5141200492CE0 /* BootCamps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE171782AF5141200492CE0 /* BootCamps.swift */; };
+		1FE1717B2AF5145300492CE0 /* StatusLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1717A2AF5145300492CE0 /* StatusLoad.swift */; };
+		1FE1717D2AF514D400492CE0 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1717C2AF514D400492CE0 /* TypeAlias.swift */; };
+		1FE1717F2AF515AF00492CE0 /* caseUseBootCamps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1717E2AF515AF00492CE0 /* caseUseBootCamps.swift */; };
+		1FE171812AF51D0600492CE0 /* ViewModelBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE171802AF51D0600492CE0 /* ViewModelBoot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		1FD2A9192AF5027F00071820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FD2A91C2AF5027F00071820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FD2A91E2AF5027F00071820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FE171742AF50CB100492CE0 /* BootTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootTableViewController.swift; sourceTree = "<group>"; };
+		1FE171762AF511C300492CE0 /* Extension+URLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+URLResponse.swift"; sourceTree = "<group>"; };
+		1FE171782AF5141200492CE0 /* BootCamps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootCamps.swift; sourceTree = "<group>"; };
+		1FE1717A2AF5145300492CE0 /* StatusLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLoad.swift; sourceTree = "<group>"; };
+		1FE1717C2AF514D400492CE0 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
+		1FE1717E2AF515AF00492CE0 /* caseUseBootCamps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = caseUseBootCamps.swift; sourceTree = "<group>"; };
+		1FE171802AF51D0600492CE0 /* ViewModelBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBoot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,142 @@
 		1FD2A90F2AF5027C00071820 /* ListaBootMVVMv1 */ = {
 			isa = PBXGroup;
 			children = (
+				1FD2A9262AF502C000071820 /* Presentation */,
+				1FD2A9252AF502B800071820 /* Domain */,
+				1FD2A9242AF502A200071820 /* Data */,
 				1FD2A9102AF5027C00071820 /* AppDelegate.swift */,
 				1FD2A9122AF5027C00071820 /* SceneDelegate.swift */,
-				1FD2A9142AF5027C00071820 /* ViewController.swift */,
-				1FD2A9162AF5027C00071820 /* Main.storyboard */,
 				1FD2A9192AF5027F00071820 /* Assets.xcassets */,
 				1FD2A91B2AF5027F00071820 /* LaunchScreen.storyboard */,
 				1FD2A91E2AF5027F00071820 /* Info.plist */,
 			);
 			path = ListaBootMVVMv1;
+			sourceTree = "<group>";
+		};
+		1FD2A9242AF502A200071820 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1FD2A9302AF5036600071820 /* Local */,
+				1FD2A92D2AF5033500071820 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1FD2A9252AF502B800071820 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1FD2A92C2AF5031F00071820 /* Extension */,
+				1FD2A92B2AF5031500071820 /* UseCase */,
+				1FD2A92A2AF5030D00071820 /* Models */,
+				1FD2A9292AF5030000071820 /* Protocols */,
+				1FE1717C2AF514D400492CE0 /* TypeAlias.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1FD2A9262AF502C000071820 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				1FD2A9272AF502D600071820 /* View */,
+				1FD2A9282AF502DF00071820 /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1FD2A9272AF502D600071820 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FE171832AF55F4C00492CE0 /* Main */,
+				1FE171842AF55F5600492CE0 /* Bootcamps */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1FD2A9282AF502DF00071820 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1FE171802AF51D0600492CE0 /* ViewModelBoot.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1FD2A9292AF5030000071820 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1FD2A92A2AF5030D00071820 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1FE171782AF5141200492CE0 /* BootCamps.swift */,
+				1FE1717A2AF5145300492CE0 /* StatusLoad.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1FD2A92B2AF5031500071820 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				1FE1717E2AF515AF00492CE0 /* caseUseBootCamps.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		1FD2A92C2AF5031F00071820 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1FE171762AF511C300492CE0 /* Extension+URLResponse.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1FD2A92D2AF5033500071820 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1FD2A92E2AF5034300071820 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		1FD2A92F2AF5035300071820 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		1FD2A9302AF5036600071820 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				1FD2A92F2AF5035300071820 /* Keychain */,
+				1FD2A92E2AF5034300071820 /* CoreData */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		1FE171832AF55F4C00492CE0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1FD2A9142AF5027C00071820 /* ViewController.swift */,
+				1FD2A9162AF5027C00071820 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1FE171842AF55F5600492CE0 /* Bootcamps */ = {
+			isa = PBXGroup;
+			children = (
+				1FE171742AF50CB100492CE0 /* BootTableViewController.swift */,
+			);
+			path = Bootcamps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +279,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE1717F2AF515AF00492CE0 /* caseUseBootCamps.swift in Sources */,
+				1FE171772AF511C300492CE0 /* Extension+URLResponse.swift in Sources */,
+				1FE171812AF51D0600492CE0 /* ViewModelBoot.swift in Sources */,
 				1FD2A9152AF5027C00071820 /* ViewController.swift in Sources */,
+				1FE171792AF5141200492CE0 /* BootCamps.swift in Sources */,
 				1FD2A9112AF5027C00071820 /* AppDelegate.swift in Sources */,
 				1FD2A9132AF5027C00071820 /* SceneDelegate.swift in Sources */,
+				1FE171752AF50CB100492CE0 /* BootTableViewController.swift in Sources */,
+				1FE1717D2AF514D400492CE0 /* TypeAlias.swift in Sources */,
+				1FE1717B2AF5145300492CE0 /* StatusLoad.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
